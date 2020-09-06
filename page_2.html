@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grocery Choice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal close">
+        <div id="close">X</div>
+        <h1>Sign-up</h1>
+        <form action="./index.html">
+            <input type="text" name="name" placeholder="Name" pattern="[a-zA-Z][a-zA-Z ]+"
+                title="Should contain only alphabets and should not start with whitespace" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Should be min 8 characters, min 1 capital letter 1small letter and 1 special symbol" required>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" id="title-font"><b>grocery choice</b></a>
+            </li>
+        </ul>
+        <ul>
+            <li><a class="open">sign-up</a></li>
+        </ul>
+    </nav>
+    <table id="page2">
+        <tr>
+            <td><img src="./bigstock-red-onions-46097662.jpg"><br>ONIONS<br>Rs. 35/kg</td>
+            <td><img src="./tomato.jpeg"><br>TOMATOES<br>Rs. 20/kg</td>
+            <td><img src="./cucumber.jpeg"><br>CUCUMBERS<br>Rs. 50/kg</td>
+        </tr>
+        <tr>
+            <td><img src="./ivy gourd.jpeg"><br>IVY GOURD<br>Rs. 40/kg</td>
+            <td><img src="./green chillis.jpeg"><br>GREEN CHILLIES<br>Rs. 20/kg</td>
+            <td><img src="./lemon.jpeg"><br>LEMONS<br>Rs. 30/kg</td>
+        </tr>
+        <tr>
+            <td><img src="./beetroot.jpeg"><br>BEETROOT<br>Rs. 40/kg</td>
+            <td><img src="./tginger.jpeg"><br>GINGER<br>Rs. 20/kg</td>
+            <td><img src="./carrot.jpeg"><br>CARROTS<br>Rs. 30/kg</td>
+        </tr>
+        <tr>
+            <td colspan="1"><img src="./bottle gourd.jpeg"><br>BOTTLE GOURD<br>Rs. 60/kg</td>
+        </tr>
+    </table>
+    <script src="./app.js"></script>
+</body>
+
+</html>

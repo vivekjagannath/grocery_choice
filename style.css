@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Post No Bills Colombo Light;
+    src: url(./post-no-bills-colombo.light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Post No Bills Colombo Light;
+    font-style: normal;
+    font-weight: 300;
+}
+html, body{
+    overflow-x: none;
+}
+body{
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 15vh;
+    background: #16AD38;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul:nth-of-type(1) li{
+    padding-left: 1.2em;
+}
+nav ul:nth-of-type(2) li{
+    padding-right: 1.2em;
+    font-size: 250%;
+}
+a{
+    text-decoration: none;
+}
+#title-font{
+    font-size: 450%;
+    color: black;
+}
+#page1{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+#page1 tr{
+    height: 8.2vh;
+}
+#page1 tr td a{
+    color: white;
+    font-size: 200%;
+}
+#page2{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 150%;
+}
+#page2 img{
+    height: 20vh;
+    width: 10vw;
+}
+.modal{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background-color: white;
+    height: 40vh;
+    width: 50vh;
+    text-align: center;
+    background-color: green;
+}
+#close{
+    font-size: 2em;
+    float: right;
+    margin-right: 0.6em;
+}
+.close{
+    display: none;
+}
+form input, form button{
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2%;
+}
+form input::placeholder{
+    letter-spacing: 0.3em;
+    color: #000;
+}
